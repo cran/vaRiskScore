@@ -1,7 +1,7 @@
 Package: vaRiskScore
 Type: Package
 Title: VA CVD Risk Score
-Version: 1.0.0
+Version: 1.1.0
 Authors@R: c(
     person("Xiaofei", "Chen", email = "bill.nj08873@gmail.com", role = c("aut","cre")),
     person("Haekyung", "Jeon-Slaughter", email = "Haekyung.Jeon-Slaughter@UTSouthwestern.edu", role = "aut"))
@@ -16,8 +16,8 @@ License: GPL-3
 Encoding: UTF-8
 RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2023-02-14 21:46:37 UTC; billchen
+Packaged: 2023-05-31 19:16:57 UTC; billchen
 Author: Xiaofei Chen [aut, cre],
   Haekyung Jeon-Slaughter [aut]
 Repository: CRAN
-Date/Publication: 2023-02-16 12:10:02 UTC
+Date/Publication: 2023-05-31 19:30:02 UTC

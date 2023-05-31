@@ -93,8 +93,7 @@ vaScore <-
             1.008 * x_lnSBP + 0.072 * x_SMK + 0.425 * x_DM + 0.244 *
             x_Dep +
             1.263 * x_SBPTrt - (
-              2.399 * Mlnage + 0.024 * MlnTotChol - 1.350 * MlnHDL - 0.208 *
-                MlnBP * x_SBPTrt + 1.008 * MlnBP + 1.263 * x_SBPTrt
+              2.399 * Mlnage + 0.024 * MlnTotChol - 1.350 * MlnHDL + 1.008 * MlnBP 
             )
         )
       getRisk    = 1 - 0.9438 ^ tmp
@@ -114,8 +113,7 @@ vaScore <-
           2.058 * x_lnage + 0.180 * x_lnTC - 1.339 * x_lnHDL + 1.246 * x_lnSBP * (x_SBPTrt) +
             0.411 * x_lnSBP - 0.020 * (x_SMK) + 0.276 * (x_DM) + 0.231 * (x_Dep) -
             5.795 * (x_SBPTrt) - (
-              2.058 * Mlnage + 0.180 * MlnTotChol - 1.339 * MlnHDL + 1.246 *
-                MlnBP * (x_SBPTrt) + 0.411 * MlnBP - 5.795 * (x_SBPTrt)
+              2.058 * Mlnage + 0.180 * MlnTotChol - 1.339 * MlnHDL + 0.411 * MlnBP 
             )
         )
       getRisk = 1 - 0.9442 ^ tmp
@@ -135,8 +133,7 @@ vaScore <-
           2.191 * x_lnage + 0.099 * x_lnTC - 1.225 * x_lnHDL - 3.714 * x_lnSBP * (x_SBPTrt)  +
             0.653 * x_lnSBP + 0.356 * (x_SMK) + 0.315 * (x_DM) + 0.311 * (x_Dep) +
             18.290 * (x_SBPTrt) - (
-              2.191 * Mlnage + 0.099 * MlnTotChol - 1.225 * MlnHDL - 3.714 *
-                MlnBP * (x_SBPTrt) + 0.653 * MlnBP + 18.290 * (x_SBPTrt)
+              2.191 * Mlnage + 0.099 * MlnTotChol - 1.225 * MlnHDL + 0.653 * MlnBP 
             )
         )
       getRisk = 1 - 0.9542 ^ tmp
