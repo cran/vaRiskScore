@@ -5,6 +5,7 @@
 \title{VA CVD Risk Score (2021)}
 \usage{
 vaScore(
+  population = 1,
   age = 50,
   race = 1,
   SBPTrt = 1,
@@ -18,9 +19,11 @@ vaScore(
 )
 }
 \arguments{
+\item{population}{Military service (1 = Veteran, 2 = Current/Active, 3 = No Military)}
+
 \item{age}{Patient age (years: 1-110)}
 
-\item{race}{Patient race (1 = White, 2 = African American, 3 = Hispanic)}
+\item{race}{Patient race (1 = White, 2 = African American, 3 = Hispanic, 4 = Asian/Hawaiian Americans, 5 = American Indian/Indigenous Americans and Alaska Native)}
 
 \item{SBPTrt}{Patient is on a blood pressure medication (1 = Yes, 0 = No)}
 
@@ -39,16 +42,16 @@ vaScore(
 \item{verbose}{logical: should input (patient profile) be printed.}
 }
 \value{
-Estimated 10-year CVD Risk for VA women military service
-members and veterans.
+Estimated 10-year CVD Risk
 }
 \description{
-Calculates the cardiovascular (CVD) risk score for women military service
+Calculates the cardiovascular (CVD) risk score for civilian women, women military service
 members and veterans.
 }
 \examples{
 library(vaRiskScore)
-vaScore(age = 50,
+vaScore(population = 1,
+        age = 50,
         race = 1,
         SBPTrt = 1,
         SBP = 150,
@@ -60,6 +63,11 @@ vaScore(age = 50,
         verbose = TRUE)
 }
 \references{
+Jeon-Slaughter, H., Chen, X., Whyne, E.Z., Tsai, S., Barbosa, M.R., 
+Ramanan, B., Bhushan, S., & Cao, D. (2025). External Validation of the 
+Veterans Affairs Women Cardiovascular Disease Risk Score to
+Nonveteran Women. JACC Advances, 4(9).
+
 Jeon‐Slaughter, H., Chen, X., Tsai, S., Ramanan, B., & Ebrahimi, R. (2021).
 Developing an internally validated veterans affairs women cardiovascular
 disease risk score using Veterans Affairs National Electronic Health Records.
